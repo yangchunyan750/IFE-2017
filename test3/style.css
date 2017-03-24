@@ -7,33 +7,38 @@
 	margin: 0 auto;
 	height: 800px;
 }
+.design{
+	vertical-align: top;
+}
 #left{
-	display: inline-block;
 	float: left;
 	width: 200px;
     border-color: #999;
 	border:1px solid;
-	padding:20px;
 	background-color:white;
 	clear: both;
 }
 #middle{
-	display: inline-block;
 	float: left;
 	border-color: #999;
 	border:1px solid;
 	padding:20px;
     background-color:white;
-    margin: 0 15px;
-    width: 68%;
-    height: 600px;	
+    margin: 0 20px;
+    width: 73%;
 }
 #right{
 	width: 120px;
-	display: inline-block;
-	float: right;	
+	float: left;	
     border-color: #999;
 	border:1px solid;
-	padding:20px;
 	background-color:white;
+}
+.ss{
+	display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(https://placehold.it/80x80) no-repeat;
+    border: 1px solid #999;
+    margin:20px;
 }
