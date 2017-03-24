@@ -1,0 +1,39 @@
+#container{
+	padding: 20px;
+	background-color: #eee;
+	border-color: #999;
+	border:1px solid;
+	width: 80%;
+	margin: 0 auto;
+	height: 800px;
+}
+#left{
+	display: inline-block;
+	float: left;
+	width: 200px;
+    border-color: #999;
+	border:1px solid;
+	padding:20px;
+	background-color:white;
+	clear: both;
+}
+#middle{
+	display: inline-block;
+	float: left;
+	border-color: #999;
+	border:1px solid;
+	padding:20px;
+    background-color:white;
+    margin: 0 15px;
+    width: 68%;
+    height: 600px;	
+}
+#right{
+	width: 120px;
+	display: inline-block;
+	float: right;	
+    border-color: #999;
+	border:1px solid;
+	padding:20px;
+	background-color:white;
+}
