@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>display练习</title>
+	<style type="text/css">
+	body{
+		font:14px/1.5 georgia,simsun,arial;
+	}
+	h1{
+		margin:10px 0;
+		font-size: 20px;
+	}
+	ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+		.table{
+			display: table;
+			border-collapse: collapse;
+			border:1px solid #ccc;
+		}
+		.table-caption{
+			display: table-caption;
+			margin:0;
+			padding:0;
+			font-size: 16px;
+		}
+		.table-column-group{
+			display: table-column-group;
+		}
+		.table-column{
+			display: table-column;
+			width:100px;
+		}
+		.table-header-group{
+			display: table-header-group;
+			background:#eee;
+			font-weight: bold;
+		}
+		.table-row{
+			display: table-row;
+		}
+		.table-cell{
+			display: table-cell;
+			padding:0 5px;
+			border:1px solid #ccc;
+		}
+		.table-footer-group{
+			display: table-footer-group;
+		}
+		.table-row-group{
+			display: table-row-group;
+		}
+	</style>
+</head>
+<body>
+	<h1>display构造的table小例子，IE7及以下浏览器不支持本示例</h1>
+	<div class="table">
+	<!-- table-caption 指定对象作为表格标题 -->
+		<h2 class="table-caption">花名册：</h2>
+		<!-- table-column-group指定对象作为表格列祖显示 -->
+		<!-- table-column 指定对象作为表格列 -->
+		<div class="table-column-group">
+			<div class="table-column"></div>
+			<div class="table-column"></div>
+			<div class="table-column"></div>
+		</div>
+		<!-- table-header-group 制定对象作为表格标题组 -->
+		<!-- table-row 制定对象作为表格行 -->
+		<!-- table-cell 制定对象作为表格单元格 -->
+		<div class="table-header-group">
+			<ul class="table-row">
+				<li class="table-cell">序号</li>
+				<li class="table-cell">姓名</li>
+				<li class="table-cell">年龄</li>
+			</ul>
+		</div>
+		<!-- table-footer-group制定对象作为表格脚注组 -->
+		<div class="table-footer-group">
+			<ul class="table-row">
+				<li class="table-cell">footer</li>
+				<li class="table-cell">footer</li>
+				<li class="table-cell">footer</li>
+			</ul>
+		</div>
+		<div class="table-row-group">
+			<ul class="table-row">
+				<li class="table-cell">1</li>
+				<li class="table-cell">John</li>
+				<li class="table-cell">19</li>
+			</ul>
+			<ul class="table-row">
+				<li class="table-cell">2</li>
+				<li class="table-cell">Mark</li>
+				<li class="table-cell">21</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
