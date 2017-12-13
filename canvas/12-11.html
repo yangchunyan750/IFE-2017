@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='EventUtil.js'></script>
+</head>
+<body>
+	<!-- <div id="myDiv">
+		<input type="button" value="click me" id="myBtn" name="">
+	</div>
+	<script type="text/javascript">
+		var btn=document.getElementById("myBtn");
+		btn.onclick=function(){
+			alert("hello");
+			btn.onclick=null;
+			document.getElementById("myDiv").innerHTML="Processing...";
+		}
+	</script> -->
+	<!-- <iframe name="richedit" style="height: 100px,width:100px" src="blank.htm"></iframe>
+	<script type="text/javascript">
+		EventUtil.addHandler(window,"load",function(){
+			frames["richedit"].document.designMode="on";
+		})
+	</script> -->
+	<canvas id="drawing" width="200" height="200">A drawing of something</canvas>
+	<!-- <input type="button" value="Export" id="export-btn" name="">
+	<script type="text/javascript">
+		window.onload=function(){
+			var drawing=document.getElementById("drawing");
+			var btn=document.getElementById("export-btn");
+			if(drawing.getContext){
+				var context=drawing.getContext("2d");
+				// context.strokeStyle="#000";
+				// context.fillStyle="red";
+				// context.fillRect(10,10,50,50);
+				// context.fillStyle="rgba(0,0,255,0.5)";
+				// context.fillRect(30,30,50,50);
+				// context.strokeStyle="red";
+				// context.strokeRect(40,40,50,50);
+				// context.clearRect(20,20,10,10);
+				// 开始路径
+				// context.beginPath();
+				//绘制外圆
+				// context.arc(100,100,99,0,2*Math.PI,false);
+				// //绘制内园
+				// // context.moveTo(194,100);
+				// context.arc(100,100,94,0,2*Math.PI,false);
+				// //绘制分针
+				// context.moveTo(100,100);
+				// context.lineTo(100,22);
+				// //绘制时针
+				// context.moveTo(100,100);
+				// context.lineTo(35,100);
+				// //描边路径
+				// context.stroke();
+				// context.font="bold 14px Arial";
+				// context.textAlign="center";
+				// context.textBaseline="middle";
+				// context.fillText("12",100,18);
+				// context.font="bold 14px Arial";
+				// context.textAlign="start";
+				// context.textBaseline="middle";
+				// context.fillText("12",100,40);
+				// context.font="bold 14px Arial";
+				// context.textAlign="end";
+				// context.textBaseline="middle";
+				// context.fillText("12",100,60);
+				// if(context.isPointInPath(100,100)){
+				// 	alert("Point(100,100) is in the path");
+				// }
+				context.fillStyle="#ff0000";
+				context.save();
+				context.fillStyle="#00ff00";
+				context.translate(100,100);
+				context.save();
+				context.fillStyle="#0000ff";
+				context.fillRect(0,0,100,200);
+				context.restore();
+				context.fillRect(10,10,100,200);
+				context.restore();
+				context.fillRect(0,0,100,200);
+			}
+			btn.onclick=function(){
+			var imageURI=drawing.toDataURL("image/png");//可以导出在<canvas>元素上绘制的图像，接收一个参数，即图像的MIME类型格式
+			var image=document.createElement("img");
+			image.src=imageURI;
+			document.body.appendChild(image);
+			};
+		};
+	</script> -->
+	<!-- <img src="smile.gif" id="smile" border="1" title="image tag"> 
+	<script type="text/javascript">
+		window.onload=function(){
+			var drawing=document.getElementById("drawing");
+			if(drawing.getContext){
+				var context=drawing.getContext("2d");
+				var image=document.getElementById("smile");
+				context.drawImage(image,10,10);
+				context.drawImage(image,50,10,20,30);
+				context.drawImage(image,0,10,50,50,0,100,40,60);
+			}
+		}
+	</script> -->
+	<!-- <script type="text/javascript">
+		window.onload=function(){
+			var drawing=document.getElementById("drawing");
+			var context=drawing.getContext("2d");
+			context.shadowOffsetX=5;
+			context.shadowOffsetY=5;
+			context.shadowBlur=4;
+			context.shadowColor="rgba(0,0,0,0.5)";
+			context.fillStyle="#ff0000";
+			context.fillRect(10,10,50,50);
+			context.fillStyle="rgba(0,0,255,1)";
+			context.fillRect(30,30,50,50);
+		}
+	</script> -->
+	<script type="text/javascript">
+	window.onload=function(){
+		var drawing=document.getElementById("drawing");
+		if(drawing.getContext){
+			var context=drawing.getContext("2d");
+			var gradient=context.createLinearGradient(30,30,70,70);
+			gradient.addColorStop(0,"white");
+			gradient.addColorStop(1,"black");
+			context.fillStyle="#ff0000";
+			context.fillRect(10,10,50,50);
+			context.fillStyle=gradient;
+			context.fillRect(30,30,50,50);
+		}
+	}	
+	</script>
+</body>
+</html>
